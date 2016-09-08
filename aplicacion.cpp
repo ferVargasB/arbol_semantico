@@ -258,7 +258,7 @@ void Aplicacion::establecerLadoMas()
 
 void Aplicacion::establecerLadoIzquierdo()
 {
-    bool banderaDelIgual = true;
+    /*bool banderaDelIgual = true;
     int contadorDePuntoYcoma{0};
     int indice{0};
     while(contadorDePuntoYcoma < 3){
@@ -279,12 +279,12 @@ void Aplicacion::establecerLadoIzquierdo()
         else{
             indice++;
         }
-    }
+    }*/
 
-    /*Nodo *nuevoNodoPtr = new Nodo;
+    Nodo *nuevoNodoPtr = new Nodo;
     nodoActual->establecerNodoAlaIzquierda(nuevoNodoPtr);
     nodoActual = nuevoNodoPtr;
-    nodoActual->establecerNodoRaiz("=");*/
+    nodoActual->establecerNodoRaiz("=");
 
     estabablecerOperadoresYOperandos();
 }
