@@ -10,7 +10,7 @@ Aplicacion::Aplicacion(QWidget *parent) :
 {
     ui->setupUi(this);
     nodoActual = nullptr;
-    nombreDelCodigoFuente = "/Users/fernandovargas/Desktop/codigoFuente.txt";
+    nombreDelCodigoFuente = "C:/Users/Fredo/Desktop/codigoFuente.txt";
     nodoActual = &nodoRaiz;
     codigoFuente = "";
     obtenerCodigoFuente();
@@ -280,6 +280,11 @@ void Aplicacion::establecerLadoIzquierdo()
             indice++;
         }
     }
+
+    /*Nodo *nuevoNodoPtr = new Nodo;
+    nodoActual->establecerNodoAlaIzquierda(nuevoNodoPtr);
+    nodoActual = nuevoNodoPtr;
+    nodoActual->establecerNodoRaiz("=");*/
 
     estabablecerOperadoresYOperandos();
 }
