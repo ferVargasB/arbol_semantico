@@ -6,13 +6,13 @@ class Nodo
 {
 public:
     Nodo();
-    void establecerNodoRaiz(QString valor);
-    void establecerNodoAlaIzquierda(Nodo *ptr);
-    void establecerNodoAlaDerecha(Nodo *ptr);
-    Nodo* obtenerNodoAlaDerecha();
-    Nodo* obtenerNodoAlaIzquierda();
+    void establecerNodoRaiz(QString valor);//establece el item
+    void establecerNodoAlaIzquierda(Nodo *ptr);//coloca el apuntador del parametro
+    void establecerNodoAlaDerecha(Nodo *ptr);//coloca el apuntador del parametro
+    Nodo* obtenerNodoAlaDerecha();//regresa un aputador del nodo solicitado
+    Nodo* obtenerNodoAlaIzquierda();//regresa un aputador del nodo solicitado
 private:
-    QString item;
+    QString item; //valor para identificar el nodo
     Nodo *nodoIzquierdo;
     Nodo *nodoDerecho;
 };

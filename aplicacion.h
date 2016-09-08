@@ -20,16 +20,15 @@ public:
     void paintEvent(QPaintEvent *event);
 private:
     Ui::Aplicacion *ui;
-    Nodo *nodoActual;
-    QString nombreDelCodigoFuente;
-    QString codigoFuente;
-    Nodo nodoRaiz;
+    Nodo *nodoActual;//para saber donde esta el nodo actual
+    QString nombreDelCodigoFuente; //direccion del archivo
+    QString codigoFuente;//donde se almacena el codigo
+    Nodo nodoRaiz;//el nodo principal, es un objeto
 
-    //funciones de utlidad
+    //funciones de utlidad para el arbol
     void establecerArbol();
     void crearRaiz();
     void estabablecerOperadoresYOperandos();
-    void establecerLadoMas();
     void establecerLadoIzquierdo();
     void establecerLadoDerecho();
 };
