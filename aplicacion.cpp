@@ -10,7 +10,8 @@ Aplicacion::Aplicacion(QWidget *parent) :
 {
     ui->setupUi(this);
     nodoActual = nullptr;
-    nombreDelCodigoFuente = "/Users/fernandovargas/Desktop/codigoFuente.txt";
+    //nombreDelCodigoFuente = "/Users/fernandovargas/Desktop/codigoFuente.txt";
+    nombreDelCodigoFuente = "C:/Users/Fredo/Desktop/codigoFuente.txt";
     nodoActual = &nodoRaiz;
     codigoFuente = "";
     obtenerCodigoFuente();
